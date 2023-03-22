@@ -1,0 +1,131 @@
+
+ *{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.5s linear;
+ }
+
+ body{
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/1344.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+ }
+ nav ul {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    /* align-items: center; */
+ }
+
+ nav ul li {
+    list-style: none;
+ }
+ nav ul li a{
+    padding: 17px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.2s linear;
+ }
+ nav ul li a:hover{
+    color: darkorange;
+    font-size: 1.6rem;
+ }
+
+ /* main section */
+
+  .gif{
+   position: absolute;
+   right: 3rem;
+   top: 10vh;
+   opacity: 0; 
+  }
+  .gif img{
+      width: clamp(200px,400px,600px);
+      height: clamp(150px,300px,450px);
+     
+  }
+ 
+ .container .rows{
+   width: 30vw;
+   height: 6vh;
+   border: 2px solid black;
+   border-radius: 20px;
+   background-color: white;
+   margin: 8px;
+   display: flex;
+   align-items: center;
+ }
+
+ .rows img{
+   width: 40px;
+   height: 20px;
+   margin: 0px 10px;
+ }
+  #songs .container{
+       width: 40vw;
+       height: 60vh;
+       background-color:rgba(137, 194, 202, 0.637);
+       margin:  10px 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+  }
+
+  .previous img ,.play img ,.next img{
+    width: 40px;
+    height: 40px;
+    margin: 2px 5px;
+  }
+  .previous{
+   transform: rotate(180deg);
+   margin-bottom: 10px;
+  }
+  .play img{
+   width: 70px;
+   height: 40px;
+   margin: 0px;
+  }
+
+  .progress{
+     width: 80vw;
+     height: 20vh;
+     margin: 30px 100px;
+     background-color: white;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 30px;
+  }
+
+  .progressbar{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color: black;
+  }
+ .duration{
+   margin: 0px 10px;
+ }
+  #progressBar{
+       width: 60vw;
+  }
+
+  .player{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  }
+
+ 
