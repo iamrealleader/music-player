@@ -22,7 +22,7 @@
         
         if(audioElement.paused || audioElement.currentTime <= 0)
         {
-            e.target.src = './assets/pause button 3.png';
+            e.target.src = './assets/pause button 2.png';
             audioElement.play();
             gif.style.opacity = '1'
         }
@@ -44,7 +44,7 @@
               allPause();
               index = parseInt(element.target.id);
               element.target.src = './assets/pause button 2.png';
-              play.src = './assets/pause button 3.png';
+              play.src = './assets/pause button 2.png';
               audioElement.currentTime = 0;
               audioElement.src = `songs/song ${index}.mp3`
               audioElement.play();
