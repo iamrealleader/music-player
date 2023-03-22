@@ -22,12 +22,12 @@
         
         if(audioElement.paused || audioElement.currentTime <= 0)
         {
-            e.target.src = '../assets/pause button 3.png';
+            e.target.src = './assets/pause button 3.png';
             audioElement.play();
             gif.style.opacity = '1'
         }
         else  {
-            e.target.src = '../assets/play button 2.png';
+            e.target.src = './assets/play button 2.png';
             audioElement.pause();
             gif.style.opacity = '0'
         }
@@ -36,15 +36,15 @@
 
    const allPause  = () =>{
     Array.from(document.querySelectorAll('.currentSong')).forEach( (e) =>{
-      e.src = '../assets/play button 2.png';
+      e.src = './assets/play button 2.png';
     })
    }
   Array.from(document.querySelectorAll('.currentSong')).forEach( (e) => {
     e.addEventListener('click' , (element) => {
               allPause();
               index = parseInt(element.target.id);
-              element.target.src = '../assets/pause button 3.png';
-              play.src = '../assets/pause button 3.png';
+              element.target.src = './assets/pause button 3.png';
+              play.src = './assets/pause button 3.png';
               audioElement.currentTime = 0;
               audioElement.src = `songs/song ${index}.mp3`
               audioElement.play();
