@@ -43,7 +43,7 @@
     e.addEventListener('click' , (element) => {
               allPause();
               index = parseInt(element.target.id);
-              element.target.src = './assets/pause button 3.png';
+              element.target.src = './assets/pause button 2.png';
               play.src = './assets/pause button 3.png';
               audioElement.currentTime = 0;
               audioElement.src = `songs/song ${index}.mp3`

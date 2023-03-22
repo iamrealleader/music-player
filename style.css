@@ -128,4 +128,25 @@
    align-items: center;
   }
 
- 
+  @media screen and (max-width : 600px) {
+   nav ul li a{
+   padding: 5px;
+   margin-top: 7px;
+   font-size: 1.1rem;
+}
+.gif{
+  display: none;
+}
+#songs .container{
+  width: 70vw;
+  height: 70vh;
+}
+.container .rows{
+  width: 60vw !important;
+}
+.progress{
+  width: 92vw;
+  height: 25vh;
+  margin: 10px;
+}
+ }
